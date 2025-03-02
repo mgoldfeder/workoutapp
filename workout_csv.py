@@ -8,7 +8,7 @@ df = pd.read_csv(csv_url, header=0)
 
 # Load the cleaned CSV file into a DataFrame
 try:
-    df = pd.read_csv(csv_path, header=0)
+    df = pd.read_csv(csv_url, header=0)
     st.success(f'Successfully loaded the exercise database.')
 except Exception as e:
     st.error(f'Error loading CSV file: {e}')
