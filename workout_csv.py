@@ -3,7 +3,8 @@ import pandas as pd
 import streamlit as st
 
 # Define the path to the cleaned CSV file
-csv_path = '/Users/mattgoldfeder/Downloads/cleaned_workoutdb2.csv'
+csv_url = 'https://raw.githubusercontent.com/mgoldfeder/workoutapp/main/cleaned_workoutdb2.csv'
+df = pd.read_csv(csv_url, header=0)
 
 # Load the cleaned CSV file into a DataFrame
 try:
